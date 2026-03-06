@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blend360 Tech - Data Science &amp; AI Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00f2ff",
+                        dark: "#121212",
+                        "deep-gray": "#1e1e1e",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --cyan-glow: #00f2ff;
+            --dark-charcoal: #121212;
+        }
+        body {
+            background-color: var(--dark-charcoal);
+            background-image: 
+                linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: white;
+            min-height: 100dvh;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .mySlides {
+            display: none;
+        }
+        .dot {
+            cursor: pointer;
+            height: 8px;
+            width: 8px;
+            margin: 0 4px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .active, .dot:hover {
+            background-color: var(--cyan-glow);
+            width: 24px;
+            border-radius: 4px;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 0.8s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 242, 255, 0.2);
+        }
+        .neon-border {
+            border: 1px solid var(--cyan-glow);
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans">
+<a class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#00f2ff] rounded-full shadow-[0_0_20px_rgba(0,242,255,0.4)] flex items-center justify-center transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined text-3xl text-black">hub</span>
+</a>
+<div class="max-w-md mx-auto px-6 py-12 flex flex-col items-center">
+<div class="flex flex-col items-center mb-8 text-center">
+<div class="w-28 h-28 bg-[#1e1e1e] rounded-2xl border-2 border-[#00f2ff] flex items-center justify-center mb-6 overflow-hidden shadow-[0_0_30px_rgba(0,242,255,0.15)]">
+<div class="text-6xl font-display font-bold text-[#00f2ff]">B</div>
+</div>
+<h1 class="font-display font-bold text-4xl mb-2 tracking-tight text-white">Blend360</h1>
+<p class="text-sm font-medium px-4 leading-relaxed text-[#00f2ff] opacity-90 uppercase tracking-widest">
+                AWS Premier Partner | Data Science &amp; AI Solutions
+            </p>
+<div class="flex space-x-6 mt-6">
+<a class="text-white hover:text-[#00f2ff] transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-white hover:text-[#00f2ff] transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+</div>
+</div>
+<div class="w-full space-y-4 mb-12">
+<a class="group relative flex items-center bg-[#1e1e1e] text-[#00f2ff] p-4 rounded-xl border border-[#00f2ff]/30 transition-all hover:border-[#00f2ff] active:scale-95 shadow-lg" href="#">
+<div class="w-10 h-10 bg-[#00f2ff]/10 rounded-lg flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-[#00f2ff]">analytics</span>
+</div>
+<div class="flex-grow font-bold text-sm tracking-wide">Data Science Solutions</div>
+<span class="material-symbols-outlined text-xl opacity-50">chevron_right</span>
+</a>
+<a class="group relative flex items-center bg-[#1e1e1e] text-[#00f2ff] p-4 rounded-xl border border-[#00f2ff]/30 transition-all hover:border-[#00f2ff] active:scale-95 shadow-lg" href="#">
+<div class="w-10 h-10 bg-[#00f2ff]/10 rounded-lg flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-[#00f2ff]">psychology</span>
+</div>
+<div class="flex-grow font-bold text-sm tracking-wide">AI Strategy</div>
+<span class="material-symbols-outlined text-xl opacity-50">chevron_right</span>
+</a>
+<a class="group relative flex items-center bg-[#1e1e1e] text-[#00f2ff] p-4 rounded-xl border border-[#00f2ff]/30 transition-all hover:border-[#00f2ff] active:scale-95 shadow-lg" href="#">
+<div class="w-10 h-10 bg-[#00f2ff]/10 rounded-lg flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-[#00f2ff]">settings_input_component</span>
+</div>
+<div class="flex-grow font-bold text-sm tracking-wide">MLOps Services</div>
+<span class="material-symbols-outlined text-xl opacity-50">chevron_right</span>
+</a>
+<a class="group relative flex items-center bg-[#1e1e1e] text-[#00f2ff] p-4 rounded-xl border border-[#00f2ff]/30 transition-all hover:border-[#00f2ff] active:scale-95 shadow-lg" href="#">
+<div class="w-10 h-10 bg-[#00f2ff]/10 rounded-lg flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-[#00f2ff]">support_agent</span>
+</div>
+<div class="flex-grow font-bold text-sm tracking-wide">Contact an Expert</div>
+<span class="material-symbols-outlined text-xl opacity-50">chevron_right</span>
+</a>
+</div>
+<div class="w-full mb-16">
+<h3 class="font-display font-bold text-xl mb-6 text-center text-white/90">Our Expertise</h3>
+<div class="slideshow-container rounded-2xl border border-[#00f2ff]/20 overflow-hidden bg-[#1e1e1e]/80 backdrop-blur-sm relative min-h-[220px]">
+<div class="mySlides fade p-8 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#00f2ff]/20 flex items-center justify-center mb-4 neon-border">
+<span class="material-symbols-outlined text-3xl text-[#00f2ff]">insights</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Data Science Insights</h4>
+<p class="text-sm text-white/60">Driving decisions with advanced predictive modeling and statistical analysis.</p>
+</div>
+<div class="mySlides fade p-8 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#00f2ff]/20 flex items-center justify-center mb-4 neon-border">
+<span class="material-symbols-outlined text-3xl text-[#00f2ff]">auto_awesome</span>
+</div>
+<h4 class="font-bold text-lg mb-2">AI Transformation</h4>
+<p class="text-sm text-white/60">Custom AI solutions designed to modernize workflows and unlock potential.</p>
+</div>
+<div class="mySlides fade p-8 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-[#00f2ff]/20 flex items-center justify-center mb-4 neon-border">
+<span class="material-symbols-outlined text-3xl text-[#00f2ff]">query_stats</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Advanced Analytics</h4>
+<p class="text-sm text-white/60">Complex data processing and real-time visualization for enterprise scale.</p>
+</div>
+<a class="absolute left-2 top-1/2 -translate-y-1/2 p-2 text-white/30 hover:text-[#00f2ff]" onclick="plusSlides(-1)">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-white/30 hover:text-[#00f2ff]" onclick="plusSlides(1)">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="flex justify-center mt-6">
+<span class="dot active" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+<div class="w-full space-y-4 mb-16">
+<h3 class="font-display font-bold text-xl px-2 text-white/90">Common Questions</h3>
+<div class="space-y-3">
+<details class="group bg-[#1e1e1e] rounded-xl overflow-hidden border border-[#00f2ff]/10">
+<summary class="list-none p-5 flex justify-between items-center cursor-pointer font-bold text-sm text-[#00f2ff]">
+                        How do we leverage AI?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-5 pb-5 text-sm text-white/60 leading-relaxed">
+                        We deploy Generative AI, machine learning pipelines, and predictive analytics tailored to your unique data architecture, focusing on measurable business outcomes.
+                    </div>
+</details>
+<details class="group bg-[#1e1e1e] rounded-xl overflow-hidden border border-[#00f2ff]/10">
+<summary class="list-none p-5 flex justify-between items-center cursor-pointer font-bold text-sm text-[#00f2ff]">
+                        What industries do we serve?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-5 pb-5 text-sm text-white/60 leading-relaxed">
+                        We specialize in Retail, CPG, Financial Services, and Pharma, providing high-scale data solutions for some of the world's leading brands.
+                    </div>
+</details>
+</div>
+</div>
+<footer class="mt-auto pb-8 text-[11px] text-white/40 font-medium text-center">
+<div class="flex justify-center space-x-3 mb-4">
+<a class="hover:text-[#00f2ff]" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-[#00f2ff]" href="#">Terms of Service</a>
+<span>•</span>
+<a class="hover:text-[#00f2ff]" href="#">Contact</a>
+</div>
+<p class="font-display font-bold uppercase tracking-[0.2em] text-[10px] text-[#00f2ff]/80">Scale with Intelligence</p>
+</footer>
+</div>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "flex";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body></html>

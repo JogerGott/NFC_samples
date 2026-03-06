@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>La Taverna Restaurant - Gourmet Excellence</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500&amp;family=Material+Icons&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4AF37", // Elegant gold for primary actions
+              "background-light": "#FDFCFB",
+              "background-dark": "#0A0A0A",
+            },
+            fontFamily: {
+              display: ["'Playfair Display'", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.9) 100%);
+        }
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-sans selection:bg-primary/30">
+<div class="max-w-[430px] mx-auto min-h-screen relative overflow-hidden flex flex-col">
+<header class="p-6 pt-12 text-center border-b border-slate-200 dark:border-white/10">
+<h1 class="font-display text-4xl tracking-widest uppercase text-slate-900 dark:text-white mb-1" style=""><h1 class="font-display text-2xl tracking-widest font-bold uppercase text-primary cursor-text" spellcheck="false" data-stitch-added-classes="cursor-text" style="--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: 700; --tw-text-opacity: 1; color: rgb(74, 60, 49); background-color: rgb(249, 243, 235); outline: none !important;">CREPES &amp; WAFFLES</h1></h1>
+<p class="font-display italic text-sm tracking-[0.2em] text-primary" style="">Arte hecho a mano</p>
+</header>
+<div class="relative w-full aspect-[4/5] overflow-hidden">
+<img alt="Exquisite signature dish" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj7kt75jVImo6Gihj69evqWasENjKf3iZUkxhEYpErpxhqjYYS-px9n-jOWFY7z1qPQ3QSfLwAUXxGAvvpYGluWdCBVHz_GyOO85nE9yracyehx_4bc_rDvhJQ8WSHaMTHFtckG46_hnMOnME73ZWhxuzRp5F96fjwZJiRMO76N70-a5mgFFI-VD9lI-Fb8qM8omLC5BWnzqiER7pNpdwL6Uwr8ME5CKtx7Fz6gZk1AwcPBMnhqamhUNBBS7jnOxNhxoFAJSuiXVom" style="">
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-8 text-center">
+<div class="space-y-2 mb-6">
+<p class="text-xs uppercase tracking-[0.3em] text-white/70" style="">Experience Excellence</p>
+<p class="text-sm italic text-white/90" style="">"Transformamos alimentos en arte"</p>
+</div>
+<button class="w-full py-4 px-6 border border-white text-white flex justify-between items-center group transition-all hover:bg-white hover:text-black" style="">
+<span class="font-display text-lg" style="">Reserva tu mesa</span>
+<span class="material-icons" style="">chevron_right</span>
+</button>
+</div>
+</div>
+<main class="p-6 space-y-12">
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-primary text-black font-medium py-4 px-4 flex items-center justify-center gap-2 rounded transition-transform active:scale-95" style="">
+<span class="material-icons text-xl" style="">download</span>
+<span class="" style="">Menu digital</span>
+</button>
+<button class="bg-slate-900 dark:bg-white text-white dark:text-black font-medium py-4 px-4 flex items-center justify-center gap-2 rounded transition-transform active:scale-95" style="">
+<span class="material-icons text-xl" style="">notifications</span>
+<span class="" style="">Llama a un mesero</span>
+</button>
+</div>
+<section>
+<div class="flex justify-between items-end mb-6">
+<div>
+<h2 class="font-display text-3xl text-slate-900 dark:text-white uppercase" style="">OUR MENU</h2>
+<div class="h-1 w-12 bg-primary mt-2"></div>
+</div>
+<a class="text-primary text-sm font-medium tracking-wider uppercase border-b border-primary" href="#" style="">View Full</a>
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade" style="display: block;">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4">
+<img alt="The Signature Breakfast" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Lyri1rm0KUtWwJFgFQmLFUyJvIvrSgtujRKez3SrKQyxbxq8gZSSxO9m7T7JmRhfIBuUN_AxaqSZiCHz4FS_34_XK7Z_kgT8sEDgI5K7gAEuGpCz1_ae4JvE1JYsI0AREtV5UdEGeiOEIjp1mIN0Q19OKGu2k74Nj9CjTDKp2WlTLRZQU6SLkOM9tk0CybZ8ov5paJWWvZWjxNz8JIusb5JLvaG1IVCe1T-9wKWVpAhG7ElVI5v6_OMMk5KtVrA2jorDxYNSlEOP" style="">
+</div>
+<div class="flex justify-between items-start px-2">
+<div>
+<h3 class="font-display text-xl text-slate-900 dark:text-white" style="">The Signature Breakfast</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1" style="">Poached eggs, sourdough, truffle hollandaise</p>
+</div>
+<span class="font-display text-lg text-primary" style="">$40</span>
+</div>
+</div>
+<div class="mySlides fade" style="display: none;">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4">
+<img alt="Garden Harvest Bowl" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCvypfZ7UImlA8L66yH__9YYc03JXSGfrMP4oZ5skt6U8vr_088pijditSQ7HNAtveTqrs80XQtFMdzhZxSkRCX5rUTvcXh0-xaWroO8A_gStv-t7HNMjGrsEL7UJ85pg0kW7ut9psNGml5eIP9mnwwzLK8L8ZmX4tWtZow2Jp5ONWEi-n-kfYqQ3MmdKmpSVdFzBpnRrf8VH7bXpOlecPK9484syoZJB6AcXQLdNqc8QJVvIyPqEN4xN97vzk9tAt29HRDBdlsfEp" style="">
+</div>
+<div class="flex justify-between items-start px-2">
+<div>
+<h3 class="font-display text-xl text-slate-900 dark:text-white" style="">Garden Harvest Bowl</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1" style="">Seasonal greens, roasted roots, tahini</p>
+</div>
+<span class="font-display text-lg text-primary" style="">$32</span>
+</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)" style="">❮</a>
+<a class="next" onclick="plusSlides(1)" style="">❯</a>
+</div>
+<div class="text-center mt-4">
+<span class="dot active" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+</div>
+</section>
+<section class="space-y-8">
+<div>
+<h2 class="font-display text-3xl text-slate-900 dark:text-white mb-6 uppercase tracking-tight" style="">Hours of Operation</h2>
+<div class="space-y-3 text-slate-600 dark:text-slate-400">
+<div class="flex justify-between border-b border-slate-100 dark:border-white/5 pb-2">
+<span class="" style="">Mon - Thu</span>
+<span class="text-slate-900 dark:text-white" style="">6:00 PM – 11:00 PM</span>
+</div>
+<div class="flex justify-between border-b border-slate-100 dark:border-white/5 pb-2">
+<span class="" style="">Fri - Sat</span>
+<span class="text-slate-900 dark:text-white font-medium" style="">6:00 PM – 12:00 AM</span>
+</div>
+<div class="flex justify-between border-b border-slate-100 dark:border-white/5 pb-2">
+<span class="" style="">Sunday</span>
+<span class="text-slate-900 dark:text-white" style="">5:00 PM – 10:00 PM</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-display text-3xl text-slate-900 dark:text-white uppercase tracking-tight" style="">Nuestra ubicacion</h2>
+</div>
+<div class="rounded-lg overflow-hidden h-[300px] relative shadow-xl">
+<iframe allowfullscreen="" class="w-full h-full" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.068228186196!2d-73.98292812341837!3d40.76280457138598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f96792375b%3A0xc450638706b47c61!2s850%207th%20Ave%2C%20New%20York%2C%20NY%2010019!5e0!3m2!1sen!2sus!4v1709652234567!5m2!1sen!2sus" style="border:0;" title="Restaurant Location" width="100%">
+</iframe>
+</div>
+<button class="w-full p-4 border border-slate-200 dark:border-white/10 flex items-center justify-between rounded hover:bg-slate-50 dark:hover:bg-white/5 transition-colors" style="">
+<div class="flex items-center gap-3">
+<span class="material-icons text-primary" style="">place</span>
+<span class="text-sm font-medium" style="">850 7th Ave, New York, NY 10019</span>
+</div>
+<span class="material-icons text-slate-400" style="">open_in_new</span>
+</button>
+</div>
+</section>
+<section class="text-center py-8">
+<h2 class="font-display text-2xl text-slate-900 dark:text-white mb-8" style="">FOLLOW US</h2>
+<div class="flex justify-center gap-6">
+<a class="w-14 h-14 rounded-full border border-slate-200 dark:border-white/20 flex items-center justify-center hover:border-primary transition-colors text-slate-600 dark:text-white/60 hover:text-primary" href="#" style="">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-14 h-14 rounded-full border border-slate-200 dark:border-white/20 flex items-center justify-center hover:border-primary transition-colors text-slate-600 dark:text-white/60 hover:text-primary" href="#" style="">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.015 6.648c-.012-1.191.485-2.212 1.359-2.91 1.233-1.01 2.871-1.317 4.549-.877V.017C15.852-.164 13.904.341 12.38 1.434c-.87.625-1.571 1.484-2.022 2.502-.363-.787-.91-1.464-1.603-1.984-1.454-1.071-3.344-1.441-5.187-1.01v2.742c1.373-.346 2.766-.1 3.793.655.855.626 1.344 1.577 1.332 2.68V24h2.322V6.648z"></path></svg>
+</a>
+<a class="w-14 h-14 rounded-full border border-slate-200 dark:border-white/20 flex items-center justify-center hover:border-primary transition-colors text-slate-600 dark:text-white/60 hover:text-primary" href="#" style="">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</section>
+</main>
+<footer class="mt-auto p-8 text-center text-xs text-slate-400 dark:text-slate-500 space-y-4">
+<div class="flex justify-center gap-4">
+<a href="#" class="" style="">Privacy</a>
+<span class="" style="">•</span>
+<a href="#" class="" style="">Terms</a>
+<span class="" style="">•</span>
+<a href="#" class="" style="">Careers</a>
+</div>
+<p class="" style="">© 2024 La Taverna Gourmet. All rights reserved.</p>
+<div class="pt-6">
+<a class="inline-block py-2 px-8 bg-slate-100 dark:bg-white/5 rounded-full font-medium text-slate-900 dark:text-white transition-all hover:bg-slate-200 dark:hover:bg-white/10" href="#" style="">
+                    Visit Website
+                </a>
+</div>
+</footer>
+<a class="fixed bottom-6 right-6 w-14 h-14 bg-primary text-black rounded-full flex items-center justify-center shadow-2xl z-50 transition-transform active:scale-90 hover:scale-105" href="tel:+12120000000" style="">
+<span class="material-icons" style="">phone</span>
+</a>
+</div>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            if (slides[slideIndex-1]) {
+                slides[slideIndex-1].style.display = "block";  
+            }
+            if (dots[slideIndex-1]) {
+                dots[slideIndex-1].className += " active";
+            }
+        }
+    </script>
+
+</body></html>
