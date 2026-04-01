@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Urban Style Boutique | Trend-Setting Streetwear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Syncopate:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        accent: "#FF4D00",
+                        "background-light": "#F8F8F8",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Syncopate", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .hero-gradient {
+            background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        }
+        .slide { display: none; }
+        .slide.active { display: block; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white font-sans antialiased overflow-x-hidden">
+<div class="max-w-md mx-auto min-h-screen flex flex-col relative shadow-2xl">
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-6 py-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-800">
+<h1 class="font-display text-xl tracking-tighter">URBAN STYLE</h1>
+<div class="flex gap-4">
+<button class="material-icons text-2xl">shopping_bag</button>
+<button class="material-icons text-2xl">menu</button>
+</div>
+</header>
+<section class="relative h-[60vh] w-full shrink-0 overflow-hidden">
+<img alt="Urban Boutique Storefront" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClHwG2-dk6SjF5VQQBv93JyGIjnbQ4XIb4Ik0ImB85IuLKOqytcuFoVzxz7I5bLwTLx3uh1zhQuaSjCDzVCqpjHrM2gJFjZyZNpk8e7VGbamashhjgI5E5pqXQ6fjqLalc6wKF20RjfuuWsTYMSsJteE-UGQO_K0yNzq-kksrHMSekGQ9DymDaYxpeZs1_xS9F9oRUzfM8zDAS8D1CFcMDw_gPONXVC-DTuFaFm--Fj_oIr0nplaNZHf5tOqSBENR5diQzWxj59L6h"/>
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-8">
+<span class="text-accent font-bold tracking-widest text-xs uppercase mb-2">New Season 2024</span>
+<h2 class="text-white font-display text-4xl leading-tight mb-6">DEFINE YOUR STREETS.</h2>
+<div class="flex gap-3">
+<button class="bg-white text-black px-6 py-3 font-bold text-sm hover:bg-gray-100 transition-colors">SHOP NEW</button>
+<button class="border border-white text-white px-6 py-3 font-bold text-sm hover:bg-white/10 transition-colors">GALLERY</button>
+</div>
+</div>
+</section>
+<section class="py-10 px-6">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="font-display text-lg">NEW DROPS</h3>
+<p class="text-gray-500 text-sm">Our latest curated selection</p>
+</div>
+<button class="text-accent font-bold text-sm underline underline-offset-4">VIEW ALL</button>
+</div>
+<div class="relative group" id="product-slideshow">
+<!-- Slides Container -->
+<div class="relative overflow-hidden">
+<!-- Slide 1: Premium T-shirt -->
+<div class="slide active transition-opacity duration-500">
+<div class="relative bg-gray-100 dark:bg-zinc-900 aspect-[3/4] mb-3 overflow-hidden">
+<img alt="Premium T-shirt" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-NLdqe-Fsax37MlgtjJt9r74NTkL7uBLt_UeM4D3VFMmfK5kmunr-uxrhCCJYzVrNe-8hC5LB1n_ySF6TMvZQW55NQKo1Ml9IvZm9bIt8j5Ri5SrRVs-MPQ7RB1_oRNL-KtGohMmFSZzeHCzcmA6kNc4ZquUjfaUeu10W_VLjgaj9AtPa2_Toa4pdxKNpamUq4HHcE4Dui2Mq157Rce1DrAK83b3f30QTb_hRkRznZ5qH-rfRQ8nnTsr8R-0YTj1fizfcYG_oHOru"/>
+<button class="absolute bottom-4 right-4 bg-primary dark:bg-white text-white dark:text-black p-3 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-icons">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-semibold text-base uppercase tracking-tight">Premium T-shirt</h4>
+<p class="text-gray-400 text-xs">Heavyweight Cotton</p>
+</div>
+<span class="font-display text-sm">$29.99</span>
+</div>
+</div>
+<!-- Slide 2: Slim Fit Jeans -->
+<div class="slide transition-opacity duration-500">
+<div class="relative bg-gray-100 dark:bg-zinc-900 aspect-[3/4] mb-3 overflow-hidden">
+<img alt="Slim Fit Jeans" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcxMy8Pwi2IsI_67WeG3vdGK_IPWU9qhIsgekFLK91FrD6XDM-0okze44TJ97YtYxwyk_bTCMKy4VS4Bq_wRFF6vYPnOEc2rLAob3n719o72KrRh4TvlZkeFK-gR4cCbk92Z2D8Nva5At6gYeRS4NQXSPpWE2UyZERqqqC3cXn0mgZsIMJr_tTc9jzCMrvIiQxrNr_rnpTtXU5QOqfiW1gVeimRat2_RU0UMK7LYl6HC9P-Q2YNaVzVbmP-JeXPboZ6JFDwMQFtZDp"/>
+<button class="absolute bottom-4 right-4 bg-primary dark:bg-white text-white dark:text-black p-3 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-icons">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-semibold text-base uppercase tracking-tight">Slim Fit Jeans</h4>
+<p class="text-gray-400 text-xs">Raw Indigo Denim</p>
+</div>
+<span class="font-display text-sm">$79.99</span>
+</div>
+</div>
+<!-- Slide 3: Denim Jacket -->
+<div class="slide transition-opacity duration-500">
+<div class="relative bg-gray-100 dark:bg-zinc-900 aspect-[3/4] mb-3 overflow-hidden">
+<img alt="Denim Jacket" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjtFypeaP1t00bqwcPj5ETwSi8lcvZ13dfo216-cTCdy4fKtd9HQa257NYDHKPOr8KDeQZkjPIQh_ZppBsTqUbAj7OcpA3cr47m-iTVY6VYJBZ6dDjXOyYZIGZWGOmrnAYiSfn__fqIxEfOYVDdkRGGyUR8ZCdYzXXQhk7NKlzToKwui7JumtxfzRboIgX41mKF7KvlxwkiqYKjFhmMXiDZwiFYr4xPwmHkbAILSuOIGmrAEQDgoE80UjPHW2Mp36t3NeQKjaHF8ZD"/>
+<button class="absolute bottom-4 right-4 bg-primary dark:bg-white text-white dark:text-black p-3 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-icons">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-semibold text-base uppercase tracking-tight">Denim Jacket</h4>
+<p class="text-gray-400 text-xs">Classic Washed Denim</p>
+</div>
+<span class="font-display text-sm">$129.99</span>
+</div>
+</div>
+<!-- Slide 4: Urban Sneakers -->
+<div class="slide transition-opacity duration-500">
+<div class="relative bg-gray-100 dark:bg-zinc-900 aspect-[3/4] mb-3 overflow-hidden">
+<img alt="Urban Sneakers" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHXG23Xm7_2Oq8n0S9p_iV8u2U3HkK6e6E5_r_L8tD5q4v_w6J9k2L3M4N5O6P7Q8R9S0T1U2V3W4X5Y6Z7A8B9C0D1E2F3G4H5I6J7K8L9M0N1O2P3Q4R5S6T7U8V9W0X"/>
+<button class="absolute bottom-4 right-4 bg-primary dark:bg-white text-white dark:text-black p-3 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-icons">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-semibold text-base uppercase tracking-tight">Urban Sneakers</h4>
+<p class="text-gray-400 text-xs">Eco-Leather Shell</p>
+</div>
+<span class="font-display text-sm">$89.99</span>
+</div>
+</div>
+<!-- Slide 5: Canvas Tote -->
+<div class="slide transition-opacity duration-500">
+<div class="relative bg-gray-100 dark:bg-zinc-900 aspect-[3/4] mb-3 overflow-hidden">
+<img alt="Canvas Tote" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjtFypeaP1t00bqwcPj5ETwSi8lcvZ13dfo216-cTCdy4fKtd9HQa257NYDHKPOr8KDeQZkjPIQh_ZppBsTqUbAj7OcpA3cr47m-iTVY6VYJBZ6dDjXOyYZIGZWGOmrnAYiSfn__fqIxEfOYVDdkRGGyUR8ZCdYzXXQhk7NKlzToKwui7JumtxfzRboIgX41mKF7KvlxwkiqYKjFhmMXiDZwiFYr4xPwmHkbAILSuOIGmrAEQDgoE80UjPHW2Mp36t3NeQKjaHF8ZD"/>
+<button class="absolute bottom-4 right-4 bg-primary dark:bg-white text-white dark:text-black p-3 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-icons">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-semibold text-base uppercase tracking-tight">Canvas Tote</h4>
+<p class="text-gray-400 text-xs">Heavy Duty Duck Canvas</p>
+</div>
+<span class="font-display text-sm">$35.00</span>
+</div>
+</div>
+</div>
+<!-- Navigation Arrows -->
+<button class="absolute left-2 top-1/2 -translate-y-12 bg-white/80 dark:bg-black/80 p-2 rounded-full shadow-lg backdrop-blur-sm" onclick="changeSlide(-1)">
+<span class="material-icons text-xl block">chevron_left</span>
+</button>
+<button class="absolute right-2 top-1/2 -translate-y-12 bg-white/80 dark:bg-black/80 p-2 rounded-full shadow-lg backdrop-blur-sm" onclick="changeSlide(1)">
+<span class="material-icons text-xl block">chevron_right</span>
+</button>
+<!-- Pagination Dots -->
+<div class="flex justify-center gap-2 mt-6" id="pagination-dots">
+<button class="w-2 h-2 rounded-full bg-primary dark:bg-white" onclick="goToSlide(0)"></button>
+<button class="w-2 h-2 rounded-full bg-gray-300 dark:bg-zinc-700" onclick="goToSlide(1)"></button>
+<button class="w-2 h-2 rounded-full bg-gray-300 dark:bg-zinc-700" onclick="goToSlide(2)"></button>
+<button class="w-2 h-2 rounded-full bg-gray-300 dark:bg-zinc-700" onclick="goToSlide(3)"></button>
+<button class="w-2 h-2 rounded-full bg-gray-300 dark:bg-zinc-700" onclick="goToSlide(4)"></button>
+</div>
+</div>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('#pagination-dots button');
+
+    function updateSlides() {
+        slides.forEach((slide, index) => {
+            slide.classList.toggle('active', index === currentSlide);
+        });
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('bg-primary', index === currentSlide);
+            dot.classList.toggle('dark:bg-white', index === currentSlide);
+            dot.classList.toggle('bg-gray-300', index !== currentSlide);
+            dot.classList.toggle('dark:bg-zinc-700', index !== currentSlide);
+        });
+    }
+
+    function changeSlide(direction) {
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        updateSlides();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateSlides();
+    }
+</script>
+</section>
+<section class="px-6 pb-12 space-y-4">
+<button class="w-full bg-primary dark:bg-white text-white dark:text-black py-5 flex items-center justify-between px-6 font-bold tracking-tight hover:opacity-90 transition-opacity">
+<div class="flex items-center gap-4">
+<span class="material-icons">support_agent</span>
+                    CHAT WITH STYLIST
+                </div>
+<span class="material-icons">chevron_right</span>
+</button>
+<button class="w-full border-2 border-primary dark:border-white py-5 flex items-center justify-between px-6 font-bold tracking-tight hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-black transition-all">
+<div class="flex items-center gap-4">
+<span class="material-icons">star</span>
+                    VIP LOYALTY PROGRAM
+                </div>
+<span class="material-icons">chevron_right</span>
+</button>
+<button class="w-full bg-accent text-white py-5 flex items-center justify-between px-6 font-bold tracking-tight hover:opacity-90 transition-opacity">
+<div class="flex items-center gap-4">
+<span class="material-icons">location_on</span>
+                    STORE LOCATOR
+                </div>
+<span class="material-icons">chevron_right</span>
+</button>
+</section>
+<footer class="mt-auto bg-gray-100 dark:bg-zinc-900 px-6 py-12 text-center">
+<div class="flex justify-center gap-8 mb-8">
+<a class="material-icons text-3xl opacity-60 hover:opacity-100" href="#">facebook</a>
+<a class="material-icons text-3xl opacity-60 hover:opacity-100" href="#">camera_alt</a>
+<a class="material-icons text-3xl opacity-60 hover:opacity-100" href="#">tiktok</a>
+</div>
+<p class="font-display text-xs mb-4 opacity-40">URBAN STYLE BOUTIQUE © 2024</p>
+<div class="flex justify-center gap-4 text-[10px] uppercase font-bold tracking-widest opacity-60">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Shipping</a>
+</div>
+</footer>
+<nav class="sticky bottom-0 bg-white/90 dark:bg-black/90 backdrop-blur-xl border-t border-gray-200 dark:border-zinc-800 flex justify-around items-center py-3 pb-6">
+<button class="flex flex-col items-center gap-1 text-accent">
+<span class="material-icons">home</span>
+<span class="text-[10px] font-bold">HOME</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-icons">search</span>
+<span class="text-[10px] font-bold">EXPLORE</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-icons">favorite_border</span>
+<span class="text-[10px] font-bold">SAVED</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-icons">person_outline</span>
+<span class="text-[10px] font-bold">PROFILE</span>
+</button>
+</nav>
+</div>
+<button class="fixed bottom-24 right-6 bg-accent text-white p-3 rounded-full shadow-2xl z-[60]" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons">contrast</span>
+</button>
+</body></html>

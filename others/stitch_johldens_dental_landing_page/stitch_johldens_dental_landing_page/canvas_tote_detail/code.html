@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canvas Tote | KINETIC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;600&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#2f3131",
+              "on-primary": "#ffffff",
+              "on-background": "#1a1c1c",
+              "error": "#ba1a1a",
+              "inverse-on-surface": "#f0f1f1",
+              "primary-container": "#d83900",
+              "surface-container-high": "#e8e8e8",
+              "secondary-fixed-dim": "#c6c6c6",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#e7bdb2",
+              "primary-fixed": "#ffdbd1",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#872000",
+              "surface-tint": "#b12d00",
+              "on-primary-fixed": "#3b0900",
+              "tertiary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#004785",
+              "on-secondary-fixed": "#1b1b1b",
+              "on-surface-variant": "#5d4038",
+              "surface-container-highest": "#e2e2e2",
+              "secondary-container": "#e2e2e2",
+              "on-tertiary-container": "#fefcff",
+              "primary-fixed-dim": "#ffb5a0",
+              "on-secondary-container": "#646464",
+              "inverse-primary": "#ffb5a0",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#926f66",
+              "surface-bright": "#f9f9f9",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary-fixed": "#001c3a",
+              "surface": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "background": "#f9f9f9",
+              "tertiary-container": "#0075d5",
+              "tertiary": "#005daa",
+              "error-container": "#ffdad6",
+              "secondary": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-fixed-dim": "#a5c8ff",
+              "on-primary-container": "#fffbff",
+              "primary": "#ad2c00",
+              "surface-container-low": "#f3f3f4"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-white/80 dark:bg-black/80 backdrop-blur-md z-50 shadow-[0_20px_40px_rgba(26,28,28,0.06)]">
+<div class="flex items-center gap-4">
+<button class="text-black dark:text-white hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-2xl font-black tracking-tighter text-black dark:text-white font-['Epilogue'] tracking-tighter uppercase font-bold">KINETIC</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-black dark:text-white hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section: Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 min-h-[618px] items-stretch">
+<div class="md:col-span-7 relative bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Premium heavyweight black canvas tote bag standing upright against a stark industrial concrete background with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPlmkYlnltpyMEKqH75mvRmtp9_PJjElSY1YNh7DEByP61i20rC5H0WJEFMjf2HLyMS0h-ZtQi7AcgfcKBAeP80xZynC-7dptpCspFoDMpGPFBZVJfOncz_nJzIj8exGXcc3jC8x4xjJ7aO_WkWPbzMX7XEdeXfK4dlophc6Kxlv5lk6UjKruuAgc6STk9ycz98mwVD34VnRq-T9kwFEJME4wtzt_VFoCiytAF9uiYrvdU3OewITW_tEHghLPDR8Xlyt0VaFaZcdQL"/>
+<div class="absolute top-8 left-8">
+<span class="bg-primary text-on-primary px-4 py-1 text-xs font-bold tracking-[0.2em] font-['Inter'] uppercase">NEW ARRIVAL</span>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center p-8 md:p-16 bg-surface-container-lowest">
+<div class="space-y-8">
+<div class="space-y-2">
+<p class="font-['Inter'] text-[10px] tracking-[0.3em] text-secondary uppercase font-bold">ESSENTIALS SERIES // 001</p>
+<h2 class="text-5xl md:text-7xl font-black font-['Epilogue'] tracking-tighter leading-none text-on-surface">Canvas Tote</h2>
+</div>
+<div class="flex items-baseline gap-4">
+<span class="text-3xl font-bold font-['Epilogue'] text-primary">$19.99</span>
+<span class="text-sm text-secondary line-through font-['Manrope']">$29.99</span>
+</div>
+<p class="text-lg text-on-surface-variant font-['Manrope'] leading-relaxed max-w-md">
+                        Durable heavyweight canvas tote for everyday essentials. Engineered for urban utility with reinforced stitching and a monolithic profile.
+                    </p>
+<div class="space-y-4 pt-4">
+<button class="w-full py-5 bg-primary text-on-primary font-bold font-['Inter'] tracking-[0.1em] uppercase hover:opacity-90 transition-all active:scale-[0.98] shadow-[0_10px_20px_rgba(173,44,0,0.2)]">
+                            Add to Cart
+                        </button>
+<button class="w-full py-5 border-2 border-on-surface text-on-surface font-bold font-['Inter'] tracking-[0.1em] uppercase hover:bg-on-surface hover:text-surface transition-all active:scale-[0.98]">
+                            Chat with Stylist
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs: Bento Grid -->
+<section class="px-6 py-24 max-w-7xl mx-auto">
+<h3 class="font-['Epilogue'] text-3xl font-bold mb-12 tracking-tight">TECHNICAL SPECIFICATIONS</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-1">
+<div class="aspect-square bg-surface-container p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+<div>
+<h4 class="font-bold font-['Inter'] text-xs tracking-widest uppercase mb-2">Material</h4>
+<p class="text-sm text-secondary font-['Manrope']">18oz Industrial Grade Cotton Canvas</p>
+</div>
+</div>
+<div class="aspect-square bg-surface-container-high p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">straighten</span>
+<div>
+<h4 class="font-bold font-['Inter'] text-xs tracking-widest uppercase mb-2">Dimensions</h4>
+<p class="text-sm text-secondary font-['Manrope']">16" H x 14" W x 5" D</p>
+</div>
+</div>
+<div class="aspect-square bg-surface-container p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<div>
+<h4 class="font-bold font-['Inter'] text-xs tracking-widest uppercase mb-2">Durability</h4>
+<p class="text-sm text-secondary font-['Manrope']">Reinforced Box-Stitched Handles</p>
+</div>
+</div>
+<div class="aspect-square bg-surface-container-high p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+<div>
+<h4 class="font-bold font-['Inter'] text-xs tracking-widest uppercase mb-2">Ethos</h4>
+<p class="text-sm text-secondary font-['Manrope']">100% Sustainable Organic Fibers</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 py-24 max-w-7xl mx-auto items-center">
+<div class="space-y-6">
+<h3 class="font-['Epilogue'] text-4xl font-extrabold tracking-tighter">BUILT FOR THE <br/><span class="text-primary">URBAN ENVIRONMENT</span></h3>
+<p class="text-on-surface-variant font-['Manrope'] leading-relaxed">
+                    Designed in our downtown studio, the Kinetic Canvas Tote represents the intersection of brute functionality and high-end street aesthetics. Every seam is double-reinforced to withstand the rigors of a high-paced metropolitan lifestyle.
+                </p>
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="border-l-4 border-primary pl-4 py-2">
+<span class="block text-2xl font-black font-['Epilogue']">25KG</span>
+<span class="text-[10px] font-bold font-['Inter'] uppercase tracking-widest text-secondary">Load Capacity</span>
+</div>
+<div class="border-l-4 border-primary pl-4 py-2">
+<span class="block text-2xl font-black font-['Epilogue']">WATER</span>
+<span class="text-[10px] font-bold font-['Inter'] uppercase tracking-widest text-secondary">Resistant Finish</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Macro detail of tight black canvas weave with high contrast lighting showing the texture of the fabric fibers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLCKijbp60rDBW9EWs1ftdrEW1Tgmh0LOp5vjJb9mWLbrxU6SQc0vikGRNTY6Qu-tMLn_afDcBjlyF2ANjsSqY4_KpmxCErou-ZJDV-igO79vykX35qdAWx_CBNcnFUKDrFzMRcWsCHiiFzo1YAonKUkA2UHVRriNmYguK_YJ_9UsnDE9SWARcsrLlZqwkCDzAYl5X8LS_DH5BWDfveEcbLbbDwfRXFgwUNfp-5PzE62CaiBvvXRTGKJFlL-RMZgucdw4FbfbqwX8T"/>
+</div>
+</section>
+<!-- Related/Gallery -->
+<section class="bg-surface-container-low py-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-end mb-12">
+<h3 class="font-['Epilogue'] text-6xl font-black tracking-tighter leading-none">IN THE <br/>FIELD</h3>
+<p class="text-secondary font-['Manrope'] max-w-xs ml-auto text-right">01/03 — VIEW THE LOOKBOOK</p>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-8 no-scrollbar">
+<div class="min-w-[300px] h-[450px] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Model wearing techwear outfit carrying a black tote bag in a minimalist white corridor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJrhM5yzb6af3cQTTiDXOd83Yi4ULYcL6aG0ggeTXVZ6jz0yRjVjFrvPhGOnDWcNH6ViJwx835DSAtWpY5vCBi9yG9V66JRhVo4MC0Qb3dsxUJMah7aenQCCuK0IjwT0xDRh9s_ROnPLPEYlmUlZ2ZQ8ZwLq5djKeohvq-3Pixf6leKYYXHGepYVYlSQnR6uGt9QWtwIxQopeltBgpw654ZH-g9evMeELHSxr5VPdCUMKkZANob0lwGge4-LAGDj_Kp11SkfYvtBIq"/>
+</div>
+<div class="min-w-[400px] h-[450px] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Flat lay of modern urban accessories including a canvas tote, smartphone, and black metal bottle on a textured grey surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvceIFlcdJfA5W4CtzFkklwxymkfAOsqAaUMxatqIvAYat9P2xCnBxr4-iO1S7UrdfkyOqODYqXvCoYC0I6iygdr1Hhca3XNLs9URs7tYWwhlLl8vRjl5qe2Cv6zNI4-MhGQKptq63Y5TTiQ11rXOQAzTIlBdYumnkGN_q3WryIt7obwAFZen4-ECahB-Vuwdn2B7eJEuuY3RSwjYthSj4GCg0OJvAfL4oiYsCIuliAHORCGiGvRtCdhqQSfVL_iujYVBPXdjABod"/>
+</div>
+<div class="min-w-[300px] h-[450px] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Extreme close up of a person's hand grasping the handle of a tote bag with city lights bokeh in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWCjIjXe9Dqrundr4FWc9gQPd9eDXoGkG0XVKakuPzaqL1n2Odybens0we88Ade0txKPIrPza1wpFq1M3lDjfRUcJus6xmnqR8w58mFn9iVeFXurcX9OBOF2cV3kW5_VC2OFsp1Md3i9ShoXRXS_xV4fJC0hQLDaD7jaGwTpb39x3MgUQApmOcbpxf_Cjigk0t-UsciTctrAJqngbj4Gp8wqhswxe6d0iubWsYhYWkh1ylgY2BM8Oy2Agr4MUlLIUYbxxciKGsuVkm"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-4 bg-white dark:bg-black z-50 border-t border-neutral-100 dark:border-neutral-900">
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-orange-600 dark:text-orange-500 active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">EXPLORE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">SAVED</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">PROFILE</span>
+</a>
+</nav>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Ensure 0px radius across the board per system rules */
+        * { border-radius: 0 !important; }
+    </style>
+</body></html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Fit - El Gimnasio Inteligente</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Inter:wght@400;600;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFD700", // Smart Fit Signature Yellow
+                        "background-light": "#121212",
+                        "background-dark": "#0A0A0A",
+                        "surface-dark": "#1C1C1C",
+                    },
+                    fontFamily: {
+                        display: ["Oswald", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .hero-gradient {
+            background: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(255,215,0,0.2) 100%);
+        }
+        .oswald { font-family: 'Oswald', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Custom styles for the footer social section as requested */
+        .new-home-v4-footer-title {
+            @apply font-display text-2xl font-black text-white uppercase mb-6;
+        }
+        .new-home-v4-footer-social {
+            @apply flex justify-center gap-6 list-none p-0;
+        }
+        .new-home-v4-footer-social li a {
+            @apply text-zinc-500 hover:text-primary transition-colors;
+        }
+        .new-home-v4-footer-social svg {
+            @apply w-6 h-6 fill-current;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-white font-sans antialiased">
+<header class="py-8 text-center bg-background-dark border-b border-zinc-800">
+<p class="text-primary font-display font-bold tracking-widest text-xs uppercase">Bienvenido a</p>
+<h1 class="text-5xl md:text-6xl font-display font-black tracking-tighter text-primary uppercase">
+            Smart Fit
+        </h1>
+<p class="text-zinc-400 font-medium tracking-wide mt-1 uppercase text-sm">El Gimnasio Inteligente</p>
+</header>
+<!-- Section Reordering: Moved "NUESTROS SERVICIOS" to the beginning -->
+<section class="py-12">
+<h2 class="font-display text-3xl font-black text-center mb-10 text-primary uppercase italic">Nuestros Servicios</h2><p class="text-zinc-400 text-center max-w-md mx-auto mb-8 px-4 font-medium leading-relaxed">Explora nuestros ejercicios y entrenamientos recomendados para cada máquina según tus necesidades.</p>
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-8 no-scrollbar relative">
+<!-- Treadmill -->
+<div class="flex-none w-72 snap-center">
+<a class="block bg-surface-dark rounded-lg overflow-hidden group border border-zinc-800" href="#">
+<img alt="Treadmill" class="w-full h-96 object-cover brightness-75 group-hover:brightness-100 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIbns_WBGuZl-kf_63cz1l8C6owBTX5S6VAa_O_AsbtDG9jSkLh1yJ9yJPCHnuWFsRehI2hFt5ZY6leeCEc-MrQTYgHnRgcPzUL5Xzq7XqotCPUuoQ9LYujokypWl2yzz_IGHqfjgJq8PthSMIIYBHp3ec6zr7KXQ9LzohsivCGPJC1hron1LiqkiGzVx71Odw9Ne2pkQUArZtjQkznKvaMtV1fXTmMTL2sF6QjJaYqw9lTiy7s9-H_W3rVYWPyjL6_AWL613_um6v"/>
+<div class="p-4 bg-zinc-900">
+<h4 class="font-display text-xl uppercase text-white font-bold">Treadmill</h4>
+</div>
+</a>
+</div>
+<!-- Rowing Machine -->
+<div class="flex-none w-72 snap-center">
+<a class="block bg-surface-dark rounded-lg overflow-hidden group border border-zinc-800" href="#">
+<img alt="Rowing Machine" class="w-full h-96 object-cover brightness-75 group-hover:brightness-100 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHqU-96Dp1Hoq96_nV23YHZddLNJgYjHF3MvSh6yLcm7zjq8OMFylv-152J5oAtVArDvFkkqje3fBBoGqR-tnMoIpVHEhITc065i9_3RvWnZ6vZknPLJKMgCr-1HhrRwjTDxYRNKfOMnAdfI97NiPOIxcCLk403OjS_RoukBaF0TeYIiAsrY__cVlD2sFf0yEjRVj6WBuRTYX0R0yRy0GkicKLnb59jOQytTr2rRaBSKgbzVW53IbMHs5RD05l49BJ0xaKDxlvMbH2"/>
+<div class="p-4 bg-zinc-900">
+<h4 class="font-display text-xl uppercase text-white font-bold">Rowing Machine</h4>
+</div>
+</a>
+</div>
+<!-- Stationary Bike -->
+<div class="flex-none w-72 snap-center">
+<a class="block bg-surface-dark rounded-lg overflow-hidden group border border-zinc-800" href="#">
+<img alt="Stationary Bike" class="w-full h-96 object-cover brightness-75 group-hover:brightness-100 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7eQ6izXuHqkaHEcTLj6UotAenYhTUhTINRWhIlq716l8smvHE0EFfpaFMRYxprh6gSbh4iiZggO8iXF0w9p_cWKjyYLTtR-g_QZ1-yOr6k-xXFRFoYfTMvCrAB3lfjKJaFLoou2dgV1V1zdRVyMtprd2sDnCpHGKeRupPegQr_AMtjlqBb63NVysJ8dnfTcCxY1nfpP6EVvj5hgr5sLwLHdyH56fp3Ill8cdG8m4pqntt-b1xQFe2c7JK1ZhYawj9bMfEzSvs2Qp6"/>
+<div class="p-4 bg-zinc-900">
+<h4 class="font-display text-xl uppercase text-white font-bold">Stationary Bike</h4>
+</div>
+</a>
+</div>
+<!-- Elliptical Trainer -->
+<div class="flex-none w-72 snap-center">
+<a class="block bg-surface-dark rounded-lg overflow-hidden group border border-zinc-800" href="#">
+<img alt="Elliptical Trainer" class="w-full h-96 object-cover brightness-75 group-hover:brightness-100 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKtJXEswqIFFI_Gp1VwCfs2En7HfveZukj4Ef7xbNqihNIgupcPj2Cj-JwDjhJHkPYPDWWnLuAMSyetnO_sAFBdxMAHG_vhw02q85AUKluuxiEg_HFxGxo-2t8GurI_2-3H6DpJ37G8x62mlHMOsWPq46zZ62rTyfQclPDtgu-8ZCTHkd93FIGJEIbHjdlFxqQ1go4lRvDGvTobhF68wbv1oYRtuqkpjH0MY9BXy1BCwY8zGPiAcwlv8P3rQyS5cDwnTMyQnzFZKDn"/>
+<div class="p-4 bg-zinc-900">
+<h4 class="font-display text-xl uppercase text-white font-bold">Elliptical Trainer</h4>
+</div>
+</a>
+</div>
+<a class="prev absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer z-10 transition-colors" onclick="plusSlides(-1)">❮</a><a class="next absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white w-10 h-10 flex items-center justify-center rounded-full cursor-pointer z-10 transition-colors" onclick="plusSlides(1)">❯</a></div>
+<div class="flex justify-center gap-2 mt-4">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-zinc-700"></div>
+<div class="w-2 h-2 rounded-full bg-zinc-700"></div>
+<div class="w-2 h-2 rounded-full bg-zinc-700"></div>
+</div>
+</section>
+<section class="relative">
+<div class="h-[450px] overflow-hidden relative">
+<img alt="Athlete training" class="w-full h-full object-cover object-center grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkj8WnnXBrpr6MZDRdyUnGEV2oku19Ge5USxzEIDNmoLcFyFsZCoVuY81kNx03QI4gF3xsZU-CHdejmjF5vox-VHtAvNtIfa_OHJd3LFsym8xDK5C6OVdGsPUyM1W6P-bOrGjslSCu5C5-8ntxc463OfgETF9ldLGPwmzKdkurWlr90bat7xyJTgb3flTej2j_sUYzkOtbxRsaCNcsj6BPK8jyvpY3RlIXPvfunEiBqWH1bV_vDgrOGbeKlJ86O42ZN93i6-BKdZ0f"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-center pb-20">
+<h2 class="font-display text-4xl font-black text-white uppercase leading-none mb-2">Entrena a tu ritmo</h2>
+<p class="text-primary font-bold uppercase tracking-widest text-sm">Sin complicaciones</p>
+</div>
+</div>
+</section>
+<section class="px-4 py-8">
+<h2 class="font-display text-3xl font-black text-center text-primary uppercase italic mb-6">Planes de Membresía</h2>
+<div class="grid gap-4">
+<div class="bg-surface-dark border-l-4 border-zinc-700 flex justify-between items-center group hover:bg-zinc-800 transition-colors p-4">
+<div>
+<h3 class="font-display text-xl uppercase font-bold text-white">Plan Smart</h3>
+<p class="text-xs text-zinc-400">Entrena en tu sede elegida</p>
+</div>
+<div class="text-right">
+<span class="font-display text-2xl font-black text-primary">$79.900</span>
+<span class="text-[10px] block text-zinc-500 uppercase">/mes</span>
+</div>
+</div>
+<div class="bg-surface-dark border-l-4 border-primary flex justify-between items-center group hover:bg-zinc-800 transition-colors relative overflow-hidden p-4">
+<div class="absolute top-0 right-0 bg-primary text-black text-[10px] px-3 py-1 uppercase font-black">Popular</div>
+<div>
+<h3 class="font-display text-xl uppercase font-bold text-white">Plan Black</h3>
+<p class="text-xs text-zinc-400">Acceso total a todas las sedes</p>
+</div>
+<div class="text-right">
+<span class="font-display text-2xl font-black text-primary">$99.900</span>
+<span class="text-[10px] block text-zinc-500 uppercase">/mes</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Reordering: Moved "TU MEJOR VERSION" to the end -->
+<section class="px-4 py-12">
+<div class="bg-primary rounded-xl text-black text-center shadow-2xl p-6">
+<h2 class="font-display text-2xl font-bold uppercase tracking-wide">Tu mejor versión</h2>
+<p class="font-display text-4xl font-black mt-1 mb-2 uppercase">Empieza Hoy</p>
+<div class="text-2xl font-display opacity-40 mb-2">⚡</div>
+<p class="text-sm font-semibold max-w-xs mx-auto mb-4">Déjanos tus datos y te contactaremos en menos de 10 minutos para iniciar tu proceso.</p>
+<form class="space-y-4">
+<div class="text-left">
+<label class="block text-[10px] font-black uppercase tracking-widest mb-1 ml-1 text-black/70">Nombre Completo</label>
+<input class="w-full bg-black/5 text-black border-black/20 rounded p-4 focus:ring-0 focus:border-black placeholder:text-black/40" placeholder="Ej: Juan Pérez" type="text"/>
+</div>
+<div class="text-left">
+<label class="block text-[10px] font-black uppercase tracking-widest mb-1 ml-1 text-black/70">Celular <span class="text-red-600">*</span></label>
+<input class="w-full bg-black/5 text-black border-black/20 rounded p-4 focus:ring-0 focus:border-black placeholder:text-black/40" placeholder="+57 ___ ___ ____" type="tel"/>
+</div>
+<button class="w-full bg-black hover:bg-zinc-800 text-primary font-display text-xl py-4 uppercase tracking-widest transition-colors shadow-lg font-bold" type="submit">
+                    Quiero mi Plan
+                </button>
+</form>
+</div>
+</section>
+<section class="p-6 bg-background-dark text-center space-y-4">
+<button class="w-full bg-primary hover:bg-yellow-400 text-black font-display text-2xl py-5 uppercase tracking-tighter transition-all rounded-lg shadow-xl flex items-center justify-center gap-2 font-black">
+            ¡INCRÍBETE YA!
+        </button>
+<div class="py-8">
+<!-- Updated Footer Social Section -->
+<section>
+<h2 class="new-home-v4-footer-title">Síguenos</h2>
+<ul class="new-home-v4-footer-social">
+<li>
+<a href="https://es-la.facebook.com/SmartFitOficialColombia/" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/smartfitco/" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/channel/UCeu50Q7nQyjSQHNz7nM9lLw" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</li>
+<li>
+<a href="https://co.linkedin.com/company/smartfitcolombia" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+</li>
+<li>
+<a href="https://vm.tiktok.com/ZMdrfH8Vs/" target="_blank">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.33-.85.51-1.44 1.43-1.58 2.41-.16 1.02.16 2.07.82 2.86.65.82 1.65 1.35 2.7 1.48.86.1 1.73-.06 2.47-.5.76-.44 1.31-1.14 1.58-1.97.23-.72.32-1.48.3-2.24.02-4.14.01-8.28.02-12.41z"></path></svg>
+</a>
+</li>
+</ul>
+</section>
+</div>
+<p class="text-[10px] text-zinc-600 uppercase tracking-[4px] pb-4">© SMART FIT 2024</p>
+</section>
+</body></html>

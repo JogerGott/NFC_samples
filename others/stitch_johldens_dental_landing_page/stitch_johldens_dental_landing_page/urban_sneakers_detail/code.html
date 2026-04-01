@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KINETIC | Urban Sneakers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#2f3131",
+              "on-primary": "#ffffff",
+              "on-background": "#1a1c1c",
+              "error": "#ba1a1a",
+              "inverse-on-surface": "#f0f1f1",
+              "primary-container": "#d83900",
+              "surface-container-high": "#e8e8e8",
+              "secondary-fixed-dim": "#c6c6c6",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#e7bdb2",
+              "primary-fixed": "#ffdbd1",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#872000",
+              "surface-tint": "#b12d00",
+              "on-primary-fixed": "#3b0900",
+              "tertiary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#004785",
+              "on-secondary-fixed": "#1b1b1b",
+              "on-surface-variant": "#5d4038",
+              "surface-container-highest": "#e2e2e2",
+              "secondary-container": "#e2e2e2",
+              "on-tertiary-container": "#fefcff",
+              "primary-fixed-dim": "#ffb5a0",
+              "on-secondary-container": "#646464",
+              "inverse-primary": "#ffb5a0",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#926f66",
+              "surface-bright": "#f9f9f9",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary-fixed": "#001c3a",
+              "surface": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "background": "#f9f9f9",
+              "tertiary-container": "#0075d5",
+              "tertiary": "#005daa",
+              "error-container": "#ffdad6",
+              "secondary": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-fixed-dim": "#a5c8ff",
+              "on-primary-container": "#fffbff",
+              "primary": "#ad2c00",
+              "surface-container-low": "#f3f3f4"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .sharp-edges * { border-radius: 0px !important; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden sharp-edges">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-white/80 dark:bg-black/80 backdrop-blur-md z-50 shadow-[0_20px_40px_rgba(26,28,28,0.06)]">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-black dark:text-white">menu</span>
+</button>
+<span class="text-2xl font-black tracking-tighter text-black dark:text-white font-['Epilogue'] uppercase">KINETIC</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="font-label text-xs tracking-widest font-bold text-orange-600 dark:text-orange-500" href="#">HOME</a>
+<a class="font-label text-xs tracking-widest font-bold text-black dark:text-white" href="#">EXPLORE</a>
+<a class="font-label text-xs tracking-widest font-bold text-black dark:text-white" href="#">COLLECTIONS</a>
+</nav>
+<button class="active:scale-95 duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-black dark:text-white">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-24 md:pb-0">
+<!-- Hero Section: Architectural Overlap -->
+<section class="relative grid grid-cols-1 lg:grid-cols-12 gap-0 min-h-[707px]">
+<!-- Left Editorial Text -->
+<div class="lg:col-span-5 flex flex-col justify-center px-6 py-12 lg:px-16 bg-surface-container-low z-10">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase mb-4 text-primary font-bold">NEW ARRIVAL / SS24</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] mb-6">URBAN<br/>SNEAKERS</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-sm mb-12">
+                    Sleek, minimalist sneakers for the modern city explorer. Engineered for the concrete landscape.
+                </p>
+<div class="flex flex-col gap-4">
+<span class="font-headline text-3xl font-bold tracking-tight text-on-surface">$89.99</span>
+<div class="flex flex-col sm:flex-row gap-0">
+<button class="bg-primary text-on-primary px-8 py-5 font-label text-sm font-black tracking-widest uppercase flex items-center justify-center gap-3 active:scale-95 transition-all bg-gradient-to-br from-primary to-primary-container">
+                            ADD TO CART
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="bg-inverse-surface text-inverse-on-surface px-8 py-5 font-label text-sm font-black tracking-widest uppercase flex items-center justify-center gap-3 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg">chat_bubble</span>
+                            STYLIST
+                        </button>
+</div>
+</div>
+</div>
+<!-- Right Visual Canvas -->
+<div class="lg:col-span-7 relative bg-surface-container overflow-hidden h-[442px] lg:h-auto">
+<img alt="Urban Sneakers" class="absolute inset-0 w-full h-full object-cover grayscale-[0.2] contrast-125" data-alt="Side profile of sleek minimalist technical sneakers on a industrial concrete background with dramatic shadows and orange neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRkxbRR2BS0fQBI8utV0ywR16t3V72vrHlctmocIodhtmhAwk1k2hRJoz3PLrNZhnedURGstYY-Jq8bSMEjdr_dxsy2F0pWDz4u2jxzXWKqfRZKNvTf7aaci5pcBxReNz1nAxdZSspkYYMw96-oPHj2q4K3tkX5-i1rDYm_yV1AST-mEKHA8SbveYHvujBos9VJsZuV8pkBWNLHwSDoQGruFnls1Vjf5rMOb3gFyKhMjh2e7Uhm0YC90F-_MNRRs5ppxx8ZE5pV-cL"/>
+<!-- Floating Decorative Element -->
+<div class="absolute bottom-12 right-0 bg-primary p-8 hidden md:block">
+<span class="font-headline text-white text-4xl font-black tracking-tighter">001</span>
+</div>
+</div>
+</section>
+<!-- Technical Details Grid -->
+<section class="px-6 lg:px-16 py-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-[0.2em] font-black text-primary">01 / MATERIALS</span>
+<h3 class="font-headline text-2xl font-bold tracking-tight">ENGINEERED KNIT</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Breathable, precision-engineered upper designed to adapt to the shape of your foot while providing structural support for all-day urban movement.
+                    </p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-[0.2em] font-black text-primary">02 / PERFORMANCE</span>
+<h3 class="font-headline text-2xl font-bold tracking-tight">KINETIC SOLE</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        High-rebound rubber outsole with a multi-directional tread pattern for superior grip on wet city surfaces and architectural textures.
+                    </p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-[0.2em] font-black text-primary">03 / AESTHETIC</span>
+<h3 class="font-headline text-2xl font-bold tracking-tight">BRUTALIST LINES</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        A silhouette inspired by contemporary urban architecture. Sharp angles meet seamless transitions for a footwear profile that commands attention.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Product Specs (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-0 border-t border-surface-container-high">
+<div class="bg-surface-container-low p-12 flex flex-col justify-between aspect-square md:aspect-auto">
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant">WEIGHT</span>
+<span class="font-headline text-4xl font-black">280G</span>
+</div>
+<div class="bg-surface-container-highest p-12 flex flex-col justify-between aspect-square md:aspect-auto">
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant">OFFSET</span>
+<span class="font-headline text-4xl font-black">8MM</span>
+</div>
+<div class="bg-white p-12 md:col-span-2 flex flex-col justify-center">
+<div class="flex justify-between items-center mb-8">
+<span class="font-label text-xs font-black tracking-widest uppercase">SELECT SIZE (US)</span>
+<span class="font-label text-[10px] text-primary underline font-bold cursor-pointer">SIZE GUIDE</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="border-2 border-on-surface py-3 font-headline font-bold hover:bg-on-surface hover:text-white transition-colors">8</button>
+<button class="border-2 border-surface-container-high py-3 font-headline font-bold hover:border-on-surface transition-colors">9</button>
+<button class="border-2 border-on-surface bg-on-surface text-white py-3 font-headline font-bold">10</button>
+<button class="border-2 border-surface-container-high py-3 font-headline font-bold hover:border-on-surface transition-colors">11</button>
+</div>
+</div>
+</section>
+<!-- Full Width Image Block -->
+<section class="w-full h-[530px] relative">
+<img alt="Urban lifestyle" class="w-full h-full object-cover" data-alt="Low angle shot of someone wearing white urban sneakers walking on a minimalist concrete staircase with harsh sunlight shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2t2lrdiUdY-TucytgftJBwP6lAitnKiAno2UR8ZWWdEIxC_waF6Wtt0KjA0Q32uLelj1O9jXFWuHWMKLD97mkiuaGLnaDkFsc9vhUqE7l2FZBga3_rjai99PnMGSsavu2DtI9zkhX926tA47Wh7DtwtkD4oJCSwGN8u96sxY0u9gHPw6frtlhLd7Bs3MzqOmBaD9nMyFS2CBXSVBeXtLRw9NmJ5EVVWJnOg9EG3eV4w1hs9Cae7Y62toP90OfajxdY8AlPlwG7DnT"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<div class="text-center p-6 backdrop-blur-sm bg-white/10 max-w-lg border border-white/20">
+<h2 class="font-headline text-4xl font-black text-white tracking-tighter mb-4">ENGINEERED FOR THE CONCRETE</h2>
+<p class="font-body text-white/90 text-sm tracking-wide">Every step is a statement in the urban landscape.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-4 bg-white dark:bg-black z-50 md:hidden border-t border-neutral-100 dark:border-neutral-900">
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-orange-600 dark:text-orange-500 active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">EXPLORE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">SAVED</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium mt-1">PROFILE</span>
+</a>
+</nav>
+<!-- Footer for Web -->
+<footer class="hidden md:block py-16 px-16 bg-on-surface text-surface">
+<div class="grid grid-cols-4 gap-12">
+<div>
+<span class="font-headline text-3xl font-black tracking-tighter block mb-8">KINETIC</span>
+<p class="font-body text-xs text-surface-container opacity-60 leading-relaxed">
+                    Defining the new standard of urban technical wear. Sharp lines, zero compromises.
+                </p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] font-black tracking-widest text-primary">COLLECTIONS</span>
+<ul class="text-sm space-y-2 opacity-80">
+<li><a class="hover:text-primary transition-colors" href="#">SUMMER 24</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">URBAN TECH</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">ARCHIVE</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] font-black tracking-widest text-primary">SUPPORT</span>
+<ul class="text-sm space-y-2 opacity-80">
+<li><a class="hover:text-primary transition-colors" href="#">SHIPPING</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">RETURNS</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">CONTACT</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<span class="font-label text-[10px] font-black tracking-widest text-primary">NEWSLETTER</span>
+<div class="relative">
+<input class="bg-transparent border-b-2 border-surface/20 w-full py-2 font-label text-xs focus:border-primary outline-none transition-colors" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 top-1 text-primary">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-8 border-t border-surface/10 flex justify-between items-center text-[10px] font-label tracking-widest opacity-40">
+<span>© 2024 KINETIC URBANISM</span>
+<div class="flex gap-8">
+<span>PRIVACY POLICY</span>
+<span>TERMS OF SERVICE</span>
+</div>
+</div>
+</footer>
+</body></html>

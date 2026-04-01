@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#2f3131",
+              "on-primary": "#ffffff",
+              "on-background": "#1a1c1c",
+              "error": "#ba1a1a",
+              "inverse-on-surface": "#f0f1f1",
+              "primary-container": "#d83900",
+              "surface-container-high": "#e8e8e8",
+              "secondary-fixed-dim": "#c6c6c6",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#e7bdb2",
+              "primary-fixed": "#ffdbd1",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#872000",
+              "surface-tint": "#b12d00",
+              "on-primary-fixed": "#3b0900",
+              "tertiary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#004785",
+              "on-secondary-fixed": "#1b1b1b",
+              "on-surface-variant": "#5d4038",
+              "surface-container-highest": "#e2e2e2",
+              "secondary-container": "#e2e2e2",
+              "on-tertiary-container": "#fefcff",
+              "primary-fixed-dim": "#ffb5a0",
+              "on-secondary-container": "#646464",
+              "inverse-primary": "#ffb5a0",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#926f66",
+              "surface-bright": "#f9f9f9",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary-fixed": "#001c3a",
+              "surface": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "background": "#f9f9f9",
+              "tertiary-container": "#0075d5",
+              "tertiary": "#005daa",
+              "error-container": "#ffdad6",
+              "secondary": "#5e5e5e",
+              "on-error": "#ffffff",
+              "tertiary-fixed-dim": "#a5c8ff",
+              "on-primary-container": "#fffbff",
+              "primary": "#ad2c00",
+              "surface-container-low": "#f3f3f4"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-white/80 dark:bg-black/80 backdrop-blur-md z-50 shadow-[0_20px_40px_rgba(26,28,28,0.06)]">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-black dark:text-white">menu</span>
+</button>
+<span class="font-['Epilogue'] tracking-tighter uppercase font-bold text-2xl font-black tracking-tighter text-black dark:text-white">KINETIC</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 font-['Inter'] text-xs font-bold tracking-widest">
+<a class="text-black hover:opacity-70 transition-opacity" href="#">COLLECTIONS</a>
+<a class="text-orange-600 hover:opacity-70 transition-opacity" href="#">SHOP</a>
+<a class="text-black hover:opacity-70 transition-opacity" href="#">EDITORIAL</a>
+</nav>
+<button class="hover:opacity-70 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-black dark:text-white">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-24 md:pb-0">
+<div class="grid grid-cols-1 md:grid-cols-12 min-h-screen">
+<!-- Hero Image Section (Asymmetric) -->
+<div class="md:col-span-7 relative bg-surface-container-low overflow-hidden h-[530px] md:h-screen">
+<img class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" data-alt="Close-up of premium dark wash slim fit denim jeans on a minimalist concrete background with dramatic urban shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb2YdVa30dfinNG3DglEGrMCefbxtaAuF1iPe-fGZTWM2Bq7G09KdajqIK2swMdOxz0TTl2GiKQSoBR_ZF-_WIRc-1QCbEd0S-PkI6R2OqIm_Mm2fOnxC14t-ofgcwy48mUB4ZnnqEUZeOI7oetOMnI-jjwdbgs6ghyyUzLu3jmGOc9ossAB1Gmd7Bzy7aq8Qcp9-UfWH_vDexk8bdH2U2q5cdJYKfcsfgXT6Dc_hh_0XE48ysDyGiz2G6wP5294hnX69ZbWMgYYTQ"/>
+<div class="absolute bottom-12 left-12">
+<span class="bg-primary text-on-primary font-label text-[10px] tracking-[0.2em] px-3 py-1 uppercase font-bold">NEW ARRIVAL</span>
+</div>
+</div>
+<!-- Content Section -->
+<div class="md:col-span-5 flex flex-col justify-center p-8 md:p-16 lg:p-24 bg-surface">
+<div class="max-w-md">
+<nav class="flex gap-2 mb-8 font-label text-[10px] tracking-widest text-on-secondary-fixed-variant uppercase">
+<span>DENIM</span> / <span>BOTTOMS</span> / <span class="text-primary">CORE</span>
+</nav>
+<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-4">
+                        Slim Fit <br/>Jeans
+                    </h1>
+<div class="flex items-baseline gap-4 mb-12">
+<p class="text-3xl font-headline font-bold text-on-surface">$79.99</p>
+<span class="text-on-surface-variant font-label text-xs uppercase tracking-tighter">Tax incl.</span>
+</div>
+<div class="space-y-8 mb-16">
+<div class="space-y-4">
+<h3 class="font-label text-[10px] font-bold tracking-[0.1em] text-secondary uppercase">Description</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                                Premium denim with a modern slim cut and slight stretch. Engineered for the urban landscape, balancing structural integrity with kinetic mobility.
+                            </p>
+</div>
+<!-- Size Selector (Urban Grid) -->
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<h3 class="font-label text-[10px] font-bold tracking-[0.1em] text-secondary uppercase">Select Size</h3>
+<button class="text-[10px] underline tracking-tighter uppercase font-medium">Size Guide</button>
+</div>
+<div class="grid grid-cols-4 gap-px bg-surface-container-high">
+<button class="bg-white py-4 text-sm font-label hover:bg-primary hover:text-white transition-colors">28</button>
+<button class="bg-white py-4 text-sm font-label hover:bg-primary hover:text-white transition-colors">30</button>
+<button class="bg-primary text-on-primary py-4 text-sm font-label">32</button>
+<button class="bg-white py-4 text-sm font-label hover:bg-primary hover:text-white transition-colors">34</button>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button class="w-full bg-primary text-on-primary py-6 px-8 font-headline font-bold uppercase tracking-widest flex justify-between items-center group transition-all active:scale-[0.98]">
+<span>Add to Cart</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="w-full bg-inverse-surface text-inverse-on-surface py-6 px-8 font-headline font-bold uppercase tracking-widest flex justify-between items-center group transition-all active:scale-[0.98]">
+<span>Chat with Stylist</span>
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Specs Section (Asymmetric Bento) -->
+<section class="p-8 md:p-24 bg-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 space-y-12">
+<h2 class="font-headline text-4xl font-extrabold tracking-tighter uppercase max-w-sm">Architectural Details</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="space-y-4 border-l-4 border-primary pl-6">
+<h4 class="font-headline font-bold uppercase tracking-tight">Materiality</h4>
+<p class="text-sm text-on-surface-variant font-body leading-relaxed">98% Organic Cotton, 2% Technical Elastane for shape retention and 24/7 kinetic comfort.</p>
+</div>
+<div class="space-y-4 border-l-4 border-on-surface pl-6">
+<h4 class="font-headline font-bold uppercase tracking-tight">Hardware</h4>
+<p class="text-sm text-on-surface-variant font-body leading-relaxed">Matte black oxidized rivets and reinforced button fly for high-end durability.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 flex flex-col justify-end min-h-[300px] relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label text-[10px] tracking-widest uppercase text-secondary">Tech Spec</span>
+<p class="font-headline text-2xl font-black mt-2 leading-none">SKU: KNT-092-D</p>
+</div>
+<div class="absolute -top-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-4 bg-white dark:bg-black border-t border-neutral-100 dark:border-neutral-900 z-50">
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-orange-600 dark:text-orange-500 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium">EXPLORE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium">SAVED</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 dark:text-neutral-600 hover:text-black dark:hover:text-white active:translate-y-0.5 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] text-[10px] tracking-[0.05em] uppercase font-medium">PROFILE</span>
+</a>
+</nav>
+</body></html>
